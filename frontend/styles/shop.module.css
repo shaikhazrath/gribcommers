@@ -1,0 +1,10 @@
+.conatiner {
+    background-color: brown;
+
+  }
+  @media screen and (min-width: 1080px) {
+    .images{
+        width: 100%;
+        height: 100%;
+    }
+  }

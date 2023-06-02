@@ -1,0 +1,119 @@
+.section{
+  height: 100vh;
+background-image: linear-gradient(135deg, #bbd8fa, #0e2c36);
+display: flex;
+align-items: center;
+}
+.container {
+  width: 70%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.inputContainer{
+  width: 30%;
+}
+.input {
+  padding: 12px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #555;
+  border: none;
+  border-bottom: 2px solid #202020;
+  transition: border-bottom-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: #007bff;
+}
+
+.button {
+  padding: 12px 24px;
+  background-color: #202020;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #007bff;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #0056b3;
+}
+
+.link{
+  color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: 80vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .inputContainer{
+    width: 90%;
+    height: 100%;
+  }
+  .image{
+    height: 15rem;
+  }
+
+  .shopContent {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .form {
+    width: 100%;
+  }
+}
